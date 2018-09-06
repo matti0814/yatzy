@@ -47,9 +47,7 @@ namespace Yatzy
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
-            Kasta(6);            
-            
+            Kasta(6);           
         }
     }
 }
