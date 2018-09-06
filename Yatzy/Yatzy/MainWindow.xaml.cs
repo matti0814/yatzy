@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace Yatzy
 {
     /// <summary>
@@ -23,31 +24,21 @@ namespace Yatzy
         public MainWindow()
         {
             InitializeComponent();           
-        }
-
+        }             
         
-
-        public List<Dice> Kasta (int amount)
-        {
-            
-            Random side = new Random();
-            List<Dice> diceList = new List<Dice>();           
-            for (int i = 0; i < amount; i++)
-
-            {               
-                diceList.Add(new Dice());               
-            }
-            foreach (var item in diceList)
-            {
-                item.Side = side.Next(1, 7);
-            }
-            return diceList;
-            
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Kasta(6);           
+
+            YatzyEngine Engine = new YatzyEngine();
+            List <Dice> dicesThrown = new List<Dice>();           
+            int result = Engine.totalScoreFromThrow(Engine.Kasta(6));
+            txtBl1.Text = result.ToString();          
+           
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
