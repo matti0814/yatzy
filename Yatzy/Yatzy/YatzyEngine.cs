@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Yatzy
 {
-    class YatzyEngine
+    public class YatzyEngine
     {
         public List<Dice> Kasta(int amount)
         {
@@ -34,6 +34,10 @@ namespace Yatzy
             }
             return sum;
         } //Räknar ut summan av tärningarna
+        
+
+    
+        
 
     }
 }

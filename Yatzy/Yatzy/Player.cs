@@ -6,13 +6,8 @@ using System.Threading.Tasks;
 
 namespace Yatzy
 {
-    public class Dice
+    class Player
     {
-        public int Side { get; set; } 
-        
-       
-       
-    }
 
-    
+    }
 }

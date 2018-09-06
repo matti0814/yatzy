@@ -7,7 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Slå" HorizontalAlignment="Left" Margin="320,202,0,0" VerticalAlignment="Top" Width="157" Height="69" Click="Button_Click"/>
+        <Button Content="Slå" HorizontalAlignment="Left" Margin="192,241,0,0" VerticalAlignment="Top" Width="157" Height="69" Click="Button_Click"/>
+        <Button Content="Spara" HorizontalAlignment="Left" Margin="391,241,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <TextBlock x:Name="txtBl1" HorizontalAlignment="Left" Margin="182,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" Height="52"/>
 
     </Grid>
 </Window>

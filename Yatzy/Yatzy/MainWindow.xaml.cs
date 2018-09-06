@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace Yatzy
 {
     /// <summary>
@@ -29,10 +30,15 @@ namespace Yatzy
         {
 
             YatzyEngine Engine = new YatzyEngine();
-            List <Dice> dicesThrown = new List<Dice>();
-            dicesThrown = Engine.Kasta(6);
-            Engine.totalScoreFromThrow(dicesThrown);          
+            List <Dice> dicesThrown = new List<Dice>();           
+            int result = Engine.totalScoreFromThrow(Engine.Kasta(6));
+            txtBl1.Text = result.ToString();          
            
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
