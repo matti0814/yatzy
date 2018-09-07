@@ -9,7 +9,7 @@ namespace Yatzy
     public class YatzyEngine
     {
 
-        public List<Dice> CreateFiveDices()
+        public List<Dice> FiveDices()
         {
             List<Dice> diceList = new List<Dice>();
             for (int i = 0; i < 6; i++)
