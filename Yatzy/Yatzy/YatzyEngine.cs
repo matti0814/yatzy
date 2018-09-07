@@ -8,21 +8,25 @@ namespace Yatzy
 {
     public class YatzyEngine
     {
-        public List<Dice> Kasta(int amount)
-        {
 
-            Random side = new Random();
+        public List<Dice> CreateFiveDices()
+        {
             List<Dice> diceList = new List<Dice>();
-            for (int i = 0; i < amount; i++)
+            for (int i = 0; i < 6; i++)
 
             {
                 diceList.Add(new Dice());
             }
-            foreach (var item in diceList)
+            return diceList;
+        } // Skapar fem tärningar
+        public List<Dice> Kasta(List<Dice> dices)
+        {
+            Random side = new Random();       
+            foreach (var item in dices)
             {
                 item.Side = side.Next(1, 7);
             }
-            return diceList;
+            return dices;
 
         } //Kastar tärningar
         public int totalScoreFromThrow(List<Dice> thrownDices)
