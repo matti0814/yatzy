@@ -8,7 +8,8 @@ namespace Yatzy
 {
     public class Dice
     {
-        public int Side { get; set; }                     
+        public int Side { get; set; }              
+       
     }
 
     

@@ -30,15 +30,16 @@ namespace Yatzy
         {
 
             YatzyEngine Engine = new YatzyEngine();
-            List <Dice> dicesThrown = new List<Dice>();           
-            int result = Engine.totalScoreFromThrow(Engine.Kasta(6));
-            txtBl1.Text = result.ToString();          
-           
+            var ListOfdices = Engine.FiveDices();
+            Engine.totalScoreFromThrow(Engine.Kasta(ListOfdices));
+          
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            Player Leffe = new Player();
+            Leffe.Name = "Leffe Jansson";
+                       
         }
     }
 }
